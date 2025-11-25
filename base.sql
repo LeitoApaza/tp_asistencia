@@ -68,7 +68,7 @@ INSERT INTO cursos (anio, division, especialidad) VALUES
  ('5', '6', 'Computacion'),
  ('5', '5', 'Computacion'),
  ('6', '2', 'Automotor'),
- ('6', '1', 'Computacion'),
+ ('6', '1', 'Computacion');
 
  INSERT INTO materias (nombre, curso_id, profesor_id) VALUES
  ('Proyecto Informatico',1, 1),
@@ -80,7 +80,7 @@ INSERT INTO cursos (anio, division, especialidad) VALUES
  ('Geografia',7, 7),
  ('Lengua',8, 8),
  ('Base de Datos',9, 9),
- ('Matematica',10, 10),
+ ('Matematica',10, 10);
  
 INSERT INTO alumnos (nombre, apellido, materia_id) VALUES
 ('Luis', 'Gonzalez', 1),
@@ -115,6 +115,7 @@ INSERT INTO alumnos (nombre, apellido, materia_id) VALUES
 ('Humberto', 'Baez', 3),
 ('Lorena', 'Bravo', 4),
 ('Matías', 'Peralta', 4);
+
 
 
 
