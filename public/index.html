@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1> Sistema de Asistencia</h1>
+
+<div class="seccion">
+Seleccionar Curso y Materia
+<div class="filtros">
+   <div class="filtro-item">
+    <label>Curso:</label>
+    <select id="select-curso" onchange="cargarMaterias()">
+        <option value="">-Selecionar Curso-</option>
+    </select>
+</div>
+<div class="filtro-item">
+<label>Materia:</label>
+<select id="select-materia" onchange="cargarAlumnos()" disabled>
+<option value="">-Primero elige un Curso-</option>
+</select>
+</div>
+</div>
+</div>
+
+
+<div id="titulo-materia" class="titulo-materia" style="display: none">
+ <h2 id="texto-titulo"></h2>
+</div>
+
+<div class="seccion">
+ <h2> Lista de Alumnos</h2>
+ <div id="lista-alumnos">
+ <p>Selecciona una materia para ver los alumnos.</p>
+  </div>
+</div>
+  <button class="btn-ver-asistencias" onclick="cargarAsistenciasHoy()" style="display: none">
+ Ver Asistencias de Hoy 
+</button>
+
+<div class="seccion"
+ Asistencias de Hoy 
+ <div id="asistencias-hoy">
+    <p>No hay asistencias registradas hoy.</p>
+</div>
+</div>
+
+<div id="mensaje" class="mensaje"></div>
+</div>
+
+
+
+</body>
+<script src="script.js"></script>
+</html>

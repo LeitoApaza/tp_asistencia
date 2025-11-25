@@ -1,0 +1,20 @@
+{
+  "name": "tp_asistencia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servidor.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.15.3",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
