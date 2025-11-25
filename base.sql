@@ -58,3 +58,38 @@ INSERT INTO profesores (nombre, apellido) VALUES
 ('Javier', 'Diaz'),
 ('Mariana', 'Villaldo');
 
+INSERT INTO alumnos (nombre, apellido, materia_id) VALUES
+('Luis', 'Gonzalez', 1),
+('Ana', 'Rodríguez', 1),
+('Carlos', 'Fernandez', 1),
+('Javier', 'Martinez', 1),
+('Diego', 'Perez', 1),
+('Miguel', 'Díaz', 1),
+('Elena', 'Torres', 1),
+('Gabriel', 'Romero', 1),
+('Anabel', 'Castañeda', 1),
+('Valería', 'Soto', 1),
+('Victor', 'Aguillar', 2),
+('Ariel', 'Alvarez', 2),
+('Leonel', 'Apaza', 2),
+('Lucas', 'Brem', 2),
+('Erik', 'Cornejo', 2),
+('Alexis', 'Prado', 2),
+('Esteban', 'Quispe', 2),
+('Marcos', 'Maddonni', 2),
+('Fausto', 'Venguria', 2),
+('Kevin', 'Flores', 2),
+('Cesar', 'Palacios', 3),
+('Emilio', 'Salas', 3),
+('Eduardo', 'Navarro', 3),
+('Jose', 'Jimenez', 3),
+('Isabel', 'Ibarra', 3),
+('Agustín', 'Alonso', 3),
+('Alberto', 'Paredes', 3),
+('Gloria', 'Rios', 3),
+('Cristian', 'Lara', 3),
+('Humberto', 'Baez', 3),
+('Lorena', 'Bravo', 4),
+('Matías', 'Peralta', 4);
+
+
