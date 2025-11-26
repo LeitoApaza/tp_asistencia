@@ -4,8 +4,7 @@ USE sistema_asistencia;
 CREATE TABLE profesores (
  id INT AUTO_INCREMENT PRIMARY KEY,
  nombre VARCHAR(100) NOT NULL,
- apellido VARCHAR(100) NOT NULL,
- 
+ apellido VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE cursos (
@@ -13,7 +12,6 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 anio VARCHAR(50) NOT NULL,
 division VARCHAR(50) NOT NULL,
 especialidad VARCHAR(50)
-
 );
 
 CREATE TABLE materias (
@@ -23,7 +21,6 @@ curso_id INT,
 profesor_id INT,
 FOREIGN KEY (curso_id) REFERENCES cursos(id),
 FOREIGN KEY (profesor_id) REFERENCES profesores(id)
-
 );
 
 CREATE TABLE alumnos (
@@ -32,7 +29,6 @@ nombre VARCHAR(100) NOT NULL,
 apellido VARCHAR(100) NOT NULL,
 materia_id INT,
 FOREIGN KEY (materia_id) REFERENCES materias(id)
-
 );
 
 CREATE TABLE asistencias (
@@ -43,7 +39,6 @@ fecha DATE NOT NULL,
 hora TIME NOT NULL,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 FOREIGN KEY (alumno_id) REFERENCES alumnos(id)
-
 );
 
 INSERT INTO profesores (nombre, apellido) VALUES
@@ -115,6 +110,7 @@ INSERT INTO alumnos (nombre, apellido, materia_id) VALUES
 ('Humberto', 'Baez', 3),
 ('Lorena', 'Bravo', 4),
 ('Matías', 'Peralta', 4);
+
 
 
 
